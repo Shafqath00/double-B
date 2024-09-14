@@ -1,0 +1,75 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    padding: 0 35px;
+    align-items: center;
+    min-height: 100vh;
+    background-color: azure;
+} */
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+}
+.wrapper span{
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    line-height: 46px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.wrapper span:first-child{
+    left: -23px;
+    display: none;
+    z-index: 1;
+}
+.wrapper span:last-child{
+    right: -23px;
+}
+.wrapper .carousel{
+    font-size: 0%;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+.carousel .dragging{
+   cursor: grab;
+   scroll-behavior: smooth; 
+}
+.carousel .dragging img{
+    pointer-events: none;
+}
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .carousel img{
+        width: calc(100% /2);
+    }
+}
+@media screen and (max-width: 550px){
+    .carousel img{
+        width: calc(100%);
+    }
+}

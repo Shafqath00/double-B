@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoubleBrick</title>
+
+    <!-- Style sheet link -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="slipe.css">
+    <!-- Bootstrap Link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Google icon Link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/5347899d0b.js" crossorigin="anonymous"></script>
+
+    <!-- favicon Link -->
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header-nav -->
+    <div class="nav-bar">
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid nav-contents">
+                    <a class="navbar-brand" href="#"><img src="img/logo.PNG" alt="Double-brick-logo" width="150px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#fic">About</a>
+                            <a class="nav-link" href="#Projects">Services</a>
+                            <a class="nav-link" href="#">Our Projects</a>
+                            <a class="nav-link" href="#">Work Process</a>
+                            <a class="nav-link" href="#contact0">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Home -->
+
+
+    <div class="home">
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <div class="i-img">
+                        <picture>
+                            <source media="(min-width: 550px)" srcset="img/c@2x.png" style="width: 100%;">
+                            <img src="img/d@2x.png" alt="img" style="width: 100%;">
+                        </picture>
+                    </div>
+                    <p class="col-lg-10 fs-4 img-p">We are a contracting company executing house constructions and
+                        villas.</p>
+                    <button type="button" class="btns"><span class="material-symbols-outlined">
+                            call
+                        </span>5865865845</button>
+                    <!-- <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Vertically centered hero sign-up form</h1>
+                <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p> -->
+                </div>
+                <div class="col-md-5 mt-md-0 mt-4">
+
+                    <div style="background: #fff;border-radius: 10px;padding: 20px;">
+                        <form>
+                            <div>
+                                <input type="hidden" name="access_key" value="cbc330a6-3e00-4637-97a1-a11d9231ee23">
+                                <p style="font-size:20px;font-weight: 500;text-align: center;color: #EF6937;">Enquiry
+                                    Form</p>
+                                <label style="color: #000;font-size: 18px;font-weight: 500;"> Name</label>
+                                <div
+                                    style="padding: 0px 15px;border-radius: 5px;border: 1px solid #444;margin-top: 10px;">
+                                    <input type="text" style="width:100%;height: 45px;border: none;outline: none;"
+                                        name="" id="name">
+                                </div>
+                                <label style="color: #000;font-size: 18px;font-weight: 500;margin-top: 20px;">
+                                    Mobile</label>
+                                <div
+                                    style="padding: 0px 15px;border-radius: 5px;border: 1px solid #444;margin-top: 10px;">
+                                    <input type="text" style="width:100%;height: 45px;border: none;outline: none;"
+                                        name="" id="number">
+                                </div>
+                                <label style="color: #000;font-size: 18px;font-weight: 500;margin-top: 20px;">
+                                    Location</label>
+                                <div
+                                    style="padding: 0px 15px;border-radius: 5px;border: 1px solid #444;margin-top: 10px;">
+                                    <input type="text" style="width:100%;height: 45px;border: none;outline: none;"
+                                        name="" id="Location">
+                                </div>
+                                <label style="color: #000;font-size: 18px;font-weight: 500;margin-top: 20px;"> Your
+                                    Requirement
+                                </label>
+                                <div
+                                    style="padding: 0px 15px;border-radius: 5px;border: 1px solid #444;margin-top: 10px;">
+                                    <textarea type="text" style="width:100%;height: 85px;border: none;outline: none;"
+                                        name="" id="text"></textarea>
+                                </div>
+
+                                <button type="submit" onclick="sendMail()"
+                                    style="background:#EF6937;padding:15px;border-radius: 5px;width: 100%;text-align: center;display: block;margin-top: 20px;border: none;color: #fff;font-weight: 500;font-size: 19px;">
+                                    Get Free Consultation
+
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Projects -->
+
+
+
+    <div class="fic" id="fic">
+        <div class="container fic-con">
+            <div class="row">
+                <div class="">
+                    <h1 class="col-text">WE ARE GOOD AT</h1>
+                </div>
+            </div>
+            <div class="icons">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div>
+                            <img src="img/1.png" alt="img-1" width="80px">
+                            <div class="i-p">
+                                <p>Home constructions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div>
+                            <img src="img/2.png" alt="img-1" width="80px">
+                            <div class="i-p">
+                                <p>Architech Design & Structural Work</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="i-p">
+                            <img src="img/3.png" alt="img-1" width="80px">
+                            <div class="i-p">
+                                <p>Interior Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div>
+                            <img src="img/4.png" alt="img-4" width="80px">
+                            <div class="i-p">
+                                <p>Planning and Execution Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div>
+                            <img src="img/5.png" alt="img-4" width="80px">
+                            <div class="i-p">
+                                <p>Quality Control </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Details -->
+
+
+
+    <div class="details" id="Projects">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <!-- <div class="col-10 col-sm-8 col-lg-6">
+                <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div> -->
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-Light lh-1 mb-3 " id="h1-text">WE ARE
+                        <span>EXPERIENCED</span> CONSTRUCTIONS COMPANY
+                    </h1>
+                    <p class="lead">We lead and execute the entire turnkey solution chain, creating the highest standard
+                        in the market, from idea to finished product.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btns"><span class="material-symbols-outlined">
+                                call
+                            </span>5865865845</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- feature -->
+
+
+
+    <div class="fecture">
+        <div class="container">
+            <div class="fec-header">
+                <h1>Our Home Construction Packages</h1>
+                <div class="fec-loc">
+                    <span>Chennai </span>
+                    <span>Hour </span>
+                    <span>Bengalore </span>
+                </div>
+                <div class="fec-cards row" style=" display: flex; justify-content: center; text-align: center;">
+                    <div class="card-details-1 col-lg-4">
+                        <div class="card-header-1">
+                            <p>Premium Package</p>
+                            <div class="card-header-line"></div>
+                        </div>
+                        <div class="card-lists">
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d1" onclick="Myclick()">
+                                    <p>Design</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d-1-hover">
+                                    <ul>
+                                        <li>SCHEME DRAWING ALL FLOORS (2D)</li>
+                                        <li>ELEVATION DESIG (3D)</li>
+                                        <li>HALF LAYOUT ALL FLOORS (3D)</li>
+                                        <li>ELECTRICAL DRAWINGS ALL FLOORS (2D)</li>
+                                        <li>PLUMBING DRAWING ALL FLOORS (2D)</li>
+                                        <li>WORKING DRAWING ALL FLOORS (2D)</li>
+                                        <li>SOIL TEST REPORT</li>
+                                        <li>STRUCTURAL DRAWINGS</li>
+                                        <li>FURNITURE LAYOUT ALL FLOORS (2D)</li>
+                                        <li>ELEVATION DETAIL DRAWING (2D)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick2()">
+                                    <p>Project Management</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d-2-hover">
+                                    <ul>
+                                        <li>Site Engineer Dedicated Full-Time Site Engineer</li>
+                                        <li>Project Manager Daily Site Visit</li>
+                                        <li>Android/IOS App: Daily Photo Upload. Project Status Monitoring.</li>
+                                        <li>Architect: Dedicated Architect through-out the Project. Stage wise Site
+                                            Visit. Material Selection Support.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick3()">
+                                    <p>Structure</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d-3-hover">
+                                    <ul>
+                                        <li>Basement Height Upto 2 feet</li>
+                                        <li>Steel : ARS or Equivalent</li>
+                                        <li>Wire-Cut Bricks : For Partition walls. 9-Inch Thick Exterior Walls | 4 Inch
+                                            Thick Inner Walls</li>
+                                        <li>Cement : Ramco / Acc / Dalmia /</li>
+                                        <li>M Sand Blockwork & All Masonry Works</li>
+                                        <li>Concrete Grade: M20 | RMC for Roof</li>
+                                        <li>Ceiling Height : 10 Feet (FFL to FFL)</li>
+                                        <li>Steel Reinforcement: As per Jeevesh constructions Structural Detailing.</li>
+                                        <li>Parapet Wall: 3' Feet Height | 4" Thick</li>
+                                        <li>RCC Lift Pit Included (If required)</li>
+                                        <li>Lift Pit & Shaft Included (If required)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick4()">
+                                    <p>Bathroom & Plumbing</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d-4-hover">
+                                    <ul>
+                                        <li>Wall Tiles : Upto Ceiling (Full Height). 4'X2' Digital Vitrified Tile. Upto
+                                            ₹55/Sqft</li>
+                                        <li>Bath & CP Fittings : Parryware | Upto ₹18000 Per Bathroom | Wall Mounted
+                                            EWC, Wall Mounted Wash Basin, Pillar Tap, Health Faucet, Shower Set,
+                                            Concealed Wall Mixer.</li>
+                                        <li>Plumbing Pipes & Fittings : Inner CPVC, Outer PVC. Brands: Ashirwad /
+                                            Finolex</li>
+                                        <li>Overhead Tank : 2000 litres Sintex | 3 Layered | UV Protected | White
+                                            Colour. With Sensor.</li>
+                                        <li>olar Heater Plumbing Lines : Included (If Required)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick5()">
+                                    <p>Flooring</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d-5-hover">
+                                    <ul>
+                                        <li>Living, Dining, Bedrooms & Kitchen : 4'X2' | Tiles Upto ₹70/Sqft. Somany /
+                                            Kajaria / KAG / Sunheart</li>
+                                        <li>Balcony & Utility : Size 2'X2' | Upto 50/Sqft</li>
+                                        <li>Staircase : Granite Upto ₹160/sqft</li>
+                                        <li>Car Parking 2'X2' Heavy Stone| Upto ₹80/Sqft</li>
+                                        <li>Terrace Flooring : White Cooling Tile Size 1'X1' | Anuj | with Waterproofing
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick6()">
+                                    <p>Kitchen & Dining</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d-6-hover">
+                                    <ul>
+                                        <li>Wall Tile Vitrified Tile (4'X2') | Upto ₹65/Sqft</li>
+                                        <li>Sink Faucet Designer Brand | Upto ₹3500 /nos</li>
+                                        <li>Kitchen Sink: Quartz Sink with Drain Upto ₹5000</li>
+                                        <li>Dining: Wash Basin with Granite Counter</li>
+                                        <li>Kitchen Granite Top Upto ₹160/Sqft</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick7()">
+                                    <p>Door, Windows and Railing</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d-7-hover">
+                                    <ul>
+                                        <li>Main Door Ghana Teak Door & Teak Frame | 35mm Thickness | 5"X3" Thick Frame
+                                            | 8' Height 3.5 Feet Width.</li>
+                                        <li>Room Doors Flush Door with Laminate | Ghana Wood Frame | 7'X3'</li>
+                                        <li>Bathroom Door : WPC Door & Frame | 7'X2.5'</li>
+                                        <li>Windows : UPVC Sliding White - No Restriction on Size and Quantity | 5mm
+                                            Clear Glas</li>
+                                        <li>Staircase Railing : SS 304 Grade Railing</li>
+                                        <li>Balcony Railing 10mm Full Toughened Glass with 304 Grade Railing.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick8()">
+                                    <p>Painting</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d-8-hover">
+                                    <ul>
+                                        <li>Inner Wall Putty : 2 coats of Wall Putty | Birla</li>
+                                        <li>Wall Painting : 1 coat of Primer | 2 coats of Pro Matex Gold Emulsion |
+                                            Nippon</li>
+                                        <li>Ceiling Painting : 1 coat of Primer | 2 coats of Pro Matex Gold Emulsion |
+                                            Nippon</li>
+                                        <li>Exterior Paint : 1 coat of Primer | 2 Coats of Weather bond PRO from Nippon
+                                        </li>
+                                        <li>Elevation Putty : 2 Coat of Putty for Two sides of Elevation | Birla
+                                            Wallseal Waterproof</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick9()">
+                                    <p>Electrical</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d-9-hover">
+                                    <ul>
+                                        <li>Wires Finolex / Havells (FRLS)</li>
+                                        <li>Switches GM</li>
+                                        <li>No Restriction on Number of Points. Except for Lifts, DG, Curtain Motors,
+                                            Swimming Pool, Ro Plant, Pressure Pump, Intercom, Surveillance System,
+                                            Exterior Light Points, Gate Automation, lightening arrester, Hybrid Solar
+                                            Heater, Water Fountain, HVAC Systems.</li>
+                                        <li>Electricity Panel Board - Single Service with RLCB - Exterior Grade</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick10()">
+                                    <p>What's not included</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d-10-hover">
+                                    <ul>
+                                        <li>Compound Wall @ 450/Sqtft & Gate</li>
+                                        <li>Sump & Septic Tank @ 24/Litre</li>
+                                        <li>Lift</li>
+                                        <li>Electricity Connection</li>
+                                        <li>Building Plan Approval</li>
+                                        <li>Elevation Special Materials</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-details-2 col-lg-4">
+                        <div class="card-header-1">
+                            <p>Luxury Package</p>
+                            <div class="card-header-line"></div>
+                        </div>
+                        <div class="card-lists">
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick()">
+                                    <p>Design</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d1-hover">
+                                    <ul>
+                                        <li>SCHEME DRAWING ALL FLOORS (2D)</li>
+                                        <li>ELEVATION DESIG (3D)</li>
+                                        <li>HALF LAYOUT ALL FLOORS (3D)</li>
+                                        <li>ELECTRICAL DRAWINGS ALL FLOORS (2D)</li>
+                                        <li>PLUMBING DRAWING ALL FLOORS (2D)</li>
+                                        <li>WORKING DRAWING ALL FLOORS (2D)</li>
+                                        <li>SOIL TEST REPORT</li>
+                                        <li>STRUCTURAL DRAWINGS</li>
+                                        <li>FURNITURE LAYOUT ALL FLOORS (2D)</li>
+                                        <li>ELEVATION DETAIL DRAWING (2D)</li>
+                                        <li>SITE ASSESSMENT & SITE PLAN</li>
+                                        <li>INTERIOR VIEWS: ALL FLOORS (3D)</li>
+                                        <li>INTERIOR DETAILING: ALL ROOMS (2D)</li>
+                                        <li>INTERIOR 3D WALK-THROUGH</li>
+                                        <li>APPROVAL DRAWING</li>
+                                        <li>LANDSCAPING ARCHITECTURAL DESIGNS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick2()">
+                                    <p>Project Management</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d2-hover">
+                                    <ul>
+                                        <li>Site Engineer Dedicated Full-Time Site Engineer</li>
+                                        <li>Project Manager Daily Site Visit</li>
+                                        <li>Android/IOS App: Daily Photo Upload. Project Status Monitoring.</li>
+                                        <li>Architect: Dedicated Architect. Frequent Site Visit. Material & Brand
+                                            Selection Support including Interiors and Home Decor.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick3()">
+                                    <p>Structure</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d3-hover">
+                                    <ul>
+                                        <li>Basement Height Upto 2 feet</li>
+                                        <li>Steel : ARS or Equivalent</li>
+                                        <li>Wire-Cut Bricks : For Partition walls. 9-Inch Thick Exterior Walls | 4 Inch
+                                            Thick Inner Walls</li>
+                                        <li>Cement : Ramco / Acc / Dalmia /</li>
+                                        <li>M Sand Blockwork & All Masonry Works</li>
+                                        <li>Concrete Grade: M20 | RMC for Roof</li>
+                                        <li>Ceiling Height : 10 Feet (FFL to FFL)</li>
+                                        <li>Steel Reinforcement: Structural Drawings and Detailing by As per Jeevesh
+                                            constructions Structural Engineer.</li>
+                                        <li>Parapet Wall: 3.5' Feet Height | 6" Thick (Or) Toughened Glass Railing if
+                                            Required.</li>
+                                        <li>RCC Lift Pit Included (If required)</li>
+                                        <li>RCC Concrete Slab for Base</li>
+                                        <li>Lift Pit & Shaft Included (If required)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick4()">
+                                    <p>Bathroom & Plumbing</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d4-hover">
+                                    <ul>
+                                        <li>Wall Tiles : Upto Ceiling (Full Height). 4'X2' Digital Vitrified Tile. Upto
+                                            ₹80/Sqft</li>
+                                        <li>Bath & CP Fittings : Jaquar | Upto ₹40000 Per Bathroom | Concealed EWC,
+                                            Counter Top Wash Basin, Marble Counter Slab, Pillar Tap, Health Faucet,
+                                            Shower Set, Concealed Wall Mixer.</li>
+                                        <li>Plumbing Pipes & Fittings : Inner CPVC, Outer PVC. HDPE flexible pipe.
+                                            Brands: Ashirwad / Finolex / Jindal</li>
+                                        <li>Overhead Tank : Upto 5000 litres with Waterproofing.</li>
+                                        <li>olar Heater Plumbing Lines : Included (If Required)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick5()">
+                                    <p>Flooring</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d5-hover">
+                                    <ul>
+                                        <li>Living, Dining, Bedrooms & Kitchen : 6'X6' | Quarts Tiles Upto ₹120/Sqft
+                                        </li>
+                                        <li>Balcony & Utility : Size 2'X2' | Upto 60/Sqft</li>
+                                        <li>Car Parking Granite| Upto ₹120/Sqft</li>
+                                        <li>Terrace Flooring : 2'X2' Exterior Grade Vitrified Tile. (Any Grade) | with
+                                            Waterproofing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick6()">
+                                    <p>Kitchen & Dining</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d6-hover">
+                                    <ul>
+                                        <li>Wall Tile Vitrified Tile (4'X2') | Upto ₹125/Sqft</li>
+                                        <li>Sink Faucet Floor Mounter Pull-Out | Upto ₹6000 / No</li>
+                                        <li>Kitchen Sink : Multifunction Sink Upto ₹12000</li>
+                                        <li>Dining : Premium Designer Collection Wash Basin with Marble Counter and
+                                            Designer Tap.</li>
+                                        <li>Kitchen Top Quarts Stone Upto ₹250/Sqft</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick7()">
+                                    <p>Door, Windows and Railing</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d7-hover">
+                                    <ul>
+                                        <li>Main Door Designer Wood Door of Height upto 18 Feet X 5Feet (or) Security
+                                            Steel Door of Size (8'X4.5') Pure Stainless Steel with Digital Lock.</li>
+                                        <li>Room Doors Flush Door with Laminate | Ghana Wood Frame | 8'X3.5'</li>
+                                        <li>Water Proof Flush Door with Designer Laminates | 8'X3'</li>
+                                        <li>Windows : Openable Type | UPVC Coloured | No Restriction on Size and
+                                            Quantity | Toughened Glass</li>
+                                        <li>Staircase Railing : Toughened Glass with SS or Wood Railing or Aluminium
+                                        </li>
+                                        <li>Balcony Railing 10mm Full Toughened Glass with Aluminium Railing.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick8()">
+                                    <p>Painting</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d8-hover">
+                                    <ul>
+                                        <li>Inner Wall Putty : 2 coats of Wall Putty | Birla</li>
+                                        <li>Wall Painting : 1 coat of Primer | 2 coats of Royal Shyne | Asian</li>
+                                        <li>Ceiling Painting : 1 coat of Primer | 2 coats of Royal Shyne | Nippon</li>
+                                        <li>Exterior Paint : 1 coat of Primer | 2 Coats of Apex Ultima ProteK | Asian
+                                        </li>
+                                        <li>Elevation Putty : 2 Coat of Putty for All sides of Elevation | Birla
+                                            Wallseal Waterproofing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick9()">
+                                    <p>Electrical</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d9-hover">
+                                    <ul>
+                                        <li>Wires Finolex / Havells (FRLS)</li>
+                                        <li>Switches Touch Switches with Glass Plates.</li>
+                                        <li>No Restriction on Number of Points. Required power points will be provided
+                                            for Lifts, DG, Curtain Motors, Swimming Pool, Ro Plant, Pressure Pump,
+                                            Intercom, Surveillance System, Exterior Light Points, Gate Automation,
+                                            lightening arrester, Hybrid Solar Heater, Water Fountain, HVAC Systems.</li>
+                                        <li>Electricity Panel Board - Upto 2 Service Connection with RLCB Exterior Grade
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-list-d1">
+                                <div class="card-list-d1-fo" id="d-1" onclick="Myclick10()">
+                                    <p>What's not included</p>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="card-list-d1-hover" id="d10-hover">
+                                    <ul>
+                                        <li>Compound Wall @ 575/Sqtft & Gate</li>
+                                        <li>Sump & Septic Tank @ 24/Litre</li>
+                                        <li>Lift</li>
+                                        <li>Electricity Connection</li>
+                                        <li>Building Plan Approval</li>
+                                        <li>Elevation Special Materials</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Works -->
+
+
+
+    <div class="dream">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <div class="dream-header col-md-12">
+                    <h1>GET YOUR DREAM HOME</h1>
+                </div>
+                <div class="dream-img col-md-9">
+                    <div class="img">
+                        <img src="img/infographic.png" alt="infographic" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="img-project">
+        <div class="container">
+            <div>
+
+
+                <div class="img-text">
+                    <h1>
+                        Our Work
+                    </h1>
+                </div>
+                <div class="wrapper">
+                    <span id="left" class="material-symbols-outlined">
+                        chevron_left
+                    </span>
+                    <div class="carousel">
+                        <img src="img/1.jpg" alt="img" draggable="false">
+                        <img src="img/2.jpg" alt="img" draggable="false">
+                        <img src="img/3.jpg" alt="img" draggable="false">
+                        <img src="img/4.jpg" alt="img" draggable="false">
+                        <img src="img/5.jpg" alt="img" draggable="false">
+                        <img src="img/6.jpg" alt="img" draggable="false">
+                        <img src="img/7.jpg" alt="img" draggable="false">
+                        <img src="img/8.jpg" alt="img" draggable="false">
+                        <img src="img/9.jpg" alt="img" draggable="false">
+                    </div>
+                    <span id="right" class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+
+    <div class="contact0" id="contact0">
+        <div class="container">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901315.6954515784!2d77.34965514299235!3d12.806312568702618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka%2C%20India!5e1!3m2!1sen!2suk!4v1726143574074!5m2!1sen!2suk"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div>
+                        <div class="contact-icons">
+                            <div class="contact-icons-mail">
+                                <span class="material-symbols-outlined" style="font-size: 40px;">
+                                    mail
+                                </span>
+                            </div>
+                            <div class="icon-text">
+                                <p class="icon-p">Say hello</p>
+                                <p>Email. doublebricksinfo@gmail.com</p>
+                                <p>Phone. 919739739872</p>
+                            </div>
+
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icons-location">
+                                <span class="material-symbols-outlined md-48" style="font-size: 40px;">
+                                    location_on
+                                </span>
+                            </div>
+                            <div class="icon-text">
+                                <p class="icon-p">Find us in</p>
+                                <p>Jeevesh Constructions,
+                                    <br>
+                                    # 19/1, VABHASANDRA VILLAG
+                                    <br>
+                                    HULIMANGALA PANCHAYATH JIGANI HOBLI
+                                    <br>
+                                    ANEKAL TK, BANGALORE-560105
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icons-location">
+                                <span class="material-symbols-outlined" style="font-size: 40px;">
+                                    share
+                                </span>
+                            </div>
+                            <div class="ii">
+                                <div class="icon-text">
+                                    <p class="icon-p">Social networks</p>
+                                </div>
+                                <div class="social-media-icon">
+                                    <i class="fa-brands fa-facebook "></i>
+                                    <i class="fa-brands fa-twitter  "></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-linkedin "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <footer class="py-3 my-4">
+                <div class="justify-content-center border-bottom pb-3 mb-3">
+                    <div class="footer-icon">
+                        <img src="img/logo.PNG" alt="logo" width="170px">
+                    </div>
+                    <ul class="nav  justify-content-center">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Services</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Our Projects</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Work Process</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+                    </ul>
+                    <div class="social-media-icon-footer ">
+                        <i class="fa-brands fa-facebook "></i>
+                        <i class="fa-brands fa-twitter  "></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin "></i>
+                    </div>
+                </div>
+                <p class="text-center text-body-secondary">© Copyright Real Estate Beyonds All Rights Reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap script Link -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    
+    <!-- Jquery Link -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- JavaScript Link  -->
+
+
+    <script src="web.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

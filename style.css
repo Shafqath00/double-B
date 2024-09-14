@@ -1,0 +1,244 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+.nav-contents {
+    margin: 27px 0;
+}
+
+/* .collapse {
+    margin-left: 250px;
+} */
+
+.navbar-nav a {
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+/* .navbar-nav a:hover{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+} */
+.navbar-nav a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #EF6937;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .navbar-nav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+.home{
+    background-image: url(https://bootstrapmade.com/demo/templates/EstateAgency/assets/img/hero-carousel/hero-carousel-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+}
+.img-p{
+    color: white;
+    font-weight: 500;
+}
+.btns{
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
+    background-color: #EF6937;
+    padding: 10px 18px;
+}
+.btns span{
+    transform: translateY(5px);
+    padding: 0 4px;
+}
+.fic{
+    margin: 80px 0;
+}
+.fic-con{
+    text-align: center;
+}
+.col-text{
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.i-p p{
+    font-weight: 500;
+    font-size: 18px;
+    margin: 15px 0;
+}
+.details{
+    background-image: url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.details-contents{
+    width: 500px;
+    height: 100%;
+    margin: 20px;
+}
+#h1-text{
+    color: white;
+}
+.fecture{
+    margin: 50px 0;
+}
+.fec-header{
+    text-align: center;
+}
+.fec-header h1{
+    font-weight: 600;
+}
+.fec-loc{
+    margin: 18px 0;
+}
+.fec-loc span{
+    /* display: inline-block; */
+    margin:  0 15px;
+    font-weight: 500;
+    color: #EF6937;
+    font-size: 20px;
+}
+.card-list-d1-hover ul{
+    display: inline-block;
+}
+.card-list-d1-fo{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.card-list-d1-fo p{
+    font-weight: 600;
+}
+.card-details-1, .card-details-2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.card-list-d1-hover{
+    display: none;
+    background-color: #ffb09329;
+    
+    text-align: left;
+    border-radius: 7px;
+}
+.card-list-d1-hover ul li{
+    font-weight: 400;
+    font-size: 13px;
+    margin: 10px 0;
+}
+.card-list-d1-hover-hoved{
+    display: block;
+}
+.card-details-1,.card-details-2{
+    padding: 12px;
+    margin: 0 15px;
+}
+.card-header-1{
+    background-color: #EF6937;
+    color: white ;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-header-line{
+    height: 2px;
+    background-color: white;
+    width: 100px;
+}
+.card-header-1 p{
+    font-weight: 500;
+}
+.card-list-d1{
+    margin: 20px;
+}
+.dream{
+    margin: 100px 0;
+}
+.dream-header{
+    text-align: center  ;
+}
+.dream-header h1{
+    font-weight: 600;
+}
+.contact-header{
+    text-align: center;
+    margin: 80px 0;
+}
+.contact-header h1{
+    font-weight: 600;
+}
+.contact-icons{
+    display: flex;
+}
+.contact-icons-mail,.contact-icons-location{
+    margin: 0 15px;
+}
+.icon-p{
+    font-weight: 500;
+    font-size: 29px;
+}
+.social-media-icon i{
+    margin: 0 10px;
+}
+.social-media-icon-footer{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.social-media-icon-footer i{
+    margin: 0 13px;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.footer{
+    background-color: #f3f3f3;
+    margin-top: 80px;
+}
+.nav-item{
+    font-weight: 500;
+}
+footer p{
+    font-weight: 500;
+}
+.img-text{
+    margin: 50px 0;
+}
+.img-text h1{
+    font-weight: 600;
+
+}
+.img-project{
+    margin: 80px 0;
+}
+.contact0{
+    margin: 80px 0;
+}
